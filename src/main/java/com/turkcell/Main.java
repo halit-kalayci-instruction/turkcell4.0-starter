@@ -1,5 +1,6 @@
 package com.turkcell;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,8 +48,22 @@ public class Main {
     List<String> nameList = new ArrayList<>();
     nameList.add("Duygu");
     nameList.add("Rabia");
-
     System.out.println(nameList);
+    // for
+    // değişken tanımı; koşul; scope sonrası işlem;
+    for( int i=0; i < nameList.size() ; i++ )
+    {
+      // Döngünün her koşul sağladığında çalıştıracağı kapsam..
+      System.out.println(nameList.get(i));
+    }
+
+    for (String s : nameList) {
+      // Döngünün her koşul sağladığında çalıştıracağı kapsam..
+      System.out.println(s);
+    }
+
+
+
   }
 }
 //a->b->c
