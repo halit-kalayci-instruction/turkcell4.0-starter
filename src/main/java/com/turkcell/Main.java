@@ -61,9 +61,25 @@ public class Main {
       // Döngünün her koşul sağladığında çalıştıracağı kapsam..
       System.out.println(s);
     }
+    // while
+    int i=0;
+    // Infinite loop
+    while(i<5) {
+      System.out.println("i 5'den küçük");
+      i++;
+    }
+    System.out.println("***************");
 
+    int j=6;
+    while(j<5) {
+      System.out.println("while çalıştı");
+      j++;
+    }
 
-
+    // do - while
+    do{
+      System.out.println("do-while çalıştı");
+    }while(j<5);
   }
 }
 //a->b->c
