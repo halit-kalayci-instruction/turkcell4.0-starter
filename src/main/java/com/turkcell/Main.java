@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Main {
   // Main class scope'u
+
+  // entrypoint
   public static void main(String[] args)
   {
     System.out.println("Hello world!");
@@ -98,7 +100,35 @@ public class Main {
     if(number2 > 20)
       System.out.println("Number2 20'den büyük");
 
+    sendEmail("abc");
+    sendEmail("123");
+    sendEmail("456");
+    sendEmail("789");
+    sendEmail("email3");
+    sendEmail("email4");
+    sendEmail("email5");
+    sendEmail("email6");
 
+    double tax = calculateTax(200,0.20);
+    System.out.println(tax);
+
+    double tax2 = calculateTax(200,0.40);
+    System.out.println(tax2);
   }
+
+  public static void sendEmail(String email) {
+    // 20.30 satır...
+    System.out.println( email+ " Email gönderiliyor...");
+  }
+
+  public static double calculateTax(double price, double taxRate) {
+    // ...
+    // ...
+    return price * taxRate;
+  }
+
+
+
+
 }
 //a->b->c
