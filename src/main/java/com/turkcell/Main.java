@@ -4,7 +4,8 @@ package com.turkcell;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Main
+{
   // Main class scope'u
 
   // entrypoint
@@ -121,6 +122,24 @@ public class Main {
     //sayHello(new String[]{ "Hatice","Çınar" });
 
     sayHello("Halit","Engin","Nafiye","Çınar","Hatice");
+
+    // new => Bir classtan bir instance üretir.
+    Product product1 = new Product(); // yeni bir ürün
+    product1.name = "Kulaklık";
+    product1.stock = 500;
+    product1.price = 1000;
+    product1.makeDiscount();
+
+    Product product2 = new Product(
+            "Laptop",
+            5000,
+            50);
+
+
+    TaxCalculator.CalculateKdv(200);
+    TaxCalculator.CalculateKdv(300);
+    TaxCalculator.CalculateKdv(500);
+    TaxCalculator.CalculateKdv(700);
   }
 
   public static void sendEmail(String email) {
@@ -146,5 +165,8 @@ public class Main {
       System.out.println("Hello " + names[i]);
     }
   }
+  // built-in
 }
+
+
 //a->b->c
