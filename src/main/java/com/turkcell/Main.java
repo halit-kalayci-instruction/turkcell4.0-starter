@@ -109,11 +109,18 @@ public class Main {
     sendEmail("email5");
     sendEmail("email6");
 
-    double tax = calculateTax(200,0.20);
+    double tax = calculateTax(200);
     System.out.println(tax);
 
     double tax2 = calculateTax(200,0.40);
     System.out.println(tax2);
+
+
+    //sayHello(new String[]{ "Adem","Halit","Engin"});
+
+    //sayHello(new String[]{ "Hatice","Çınar" });
+
+    sayHello("Halit","Engin","Nafiye","Çınar","Hatice");
   }
 
   public static void sendEmail(String email) {
@@ -121,14 +128,23 @@ public class Main {
     System.out.println( email+ " Email gönderiliyor...");
   }
 
+  // Method Overloading => Parametre kombinasyonlarının farklı olması.
   public static double calculateTax(double price, double taxRate) {
-    // ...
-    // ...
     return price * taxRate;
   }
-
-
-
-
+  public static double calculateTax(double price){
+    return price * 0.20;
+  }
+  /*public static void sayHello(String[] name) {
+    for(int i=0; i<name.length; i++) {
+      System.out.println("Hello " + name[i]);
+    }
+  }*/
+  // varargs
+  public static void sayHello(String... names) {
+    for(int i=0; i<names.length; i++) {
+      System.out.println("Hello " + names[i]);
+    }
+  }
 }
 //a->b->c
