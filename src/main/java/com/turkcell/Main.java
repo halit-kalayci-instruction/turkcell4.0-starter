@@ -80,6 +80,25 @@ public class Main {
     do{
       System.out.println("do-while çalıştı");
     }while(j<5);
+
+    // Şart blokları
+    int age = 18;
+    if ( age <= 18  ) {
+      System.out.println("Kullanıcı sisteme üye olamaz.");
+    }
+    else if (age == 18) {
+      System.out.println("Ay ve gün sorgulanıyor..");
+    }
+    else {
+      System.out.println("Kullanıcı sisteme üye olabilir.");
+    }
+    // if bloğu
+
+    int number2 = 50;
+    if(number2 > 20)
+      System.out.println("Number2 20'den büyük");
+
+
   }
 }
 //a->b->c
