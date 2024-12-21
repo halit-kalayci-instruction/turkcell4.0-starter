@@ -1,4 +1,4 @@
-package com.turkcell;
+package com.turkcell.oop;
 
 
 import java.util.ArrayList;

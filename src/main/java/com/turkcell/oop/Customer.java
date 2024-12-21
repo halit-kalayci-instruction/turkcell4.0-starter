@@ -1,4 +1,4 @@
-package com.turkcell;
+package com.turkcell.oop;
 
 public class Customer {
   private String customerNo;
