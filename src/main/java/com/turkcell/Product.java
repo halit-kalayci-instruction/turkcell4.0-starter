@@ -43,9 +43,9 @@ public class Product {
   }
 
   // OOP Concepts
-  // Encapsulation
-  // Inheritance
-  // Polymorphism
+  // Encapsulation -
+  // Inheritance -
+  // Polymorphism -
   // Interface
   // Abstract Class
   // -----

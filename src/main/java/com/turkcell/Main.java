@@ -149,11 +149,17 @@ public class Main
     individualCustomer.buy();
 
     // Inheritance - Kalıtım
-
     // Polymorphism - Çok biçimlilik
     // Method Overloading, Method Overriding
-  }
 
+
+
+    ProductRepositoryInterface productRepository = new PgProductRepository();
+    productRepository.add(product1); // 100 farklı noktada 100 kez çağırıldı.
+    productRepository.getAll(); //  50
+
+  }
+  // 10:55
   public static void sendEmail(String email) {
     // 20.30 satır...
     System.out.println( email+ " Email gönderiliyor...");
