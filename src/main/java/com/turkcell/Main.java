@@ -125,9 +125,7 @@ public class Main
 
     // new => Bir classtan bir instance üretir.
     Product product1 = new Product(); // yeni bir ürün
-    product1.name = "Kulaklık";
-    product1.stock = 500;
-    product1.price = 1000;
+    product1.setPrice(1000);
     product1.makeDiscount();
 
     Product product2 = new Product(
@@ -135,6 +133,7 @@ public class Main
             5000,
             50);
 
+    System.out.println(product1.getPrice()); // get
 
     TaxCalculator.CalculateKdv(200);
     TaxCalculator.CalculateKdv(300);

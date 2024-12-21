@@ -1,16 +1,6 @@
 package com.turkcell;
 
-// [erişim_belirteci] class [isim]
-
-// kalıp
 public class Product {
-  // constructor - yapıcı blok
-  // eğer manual bir ctor tanımı yoksa, boş(parametresiz) ctor
-  // ide tarafından oto. oluşturulur.
-
-  // all args
-  // no args
-  // required args -> SONRA
   public Product(String name, double price, int stock) {
     this.name = name;
     this.price = price;
@@ -18,20 +8,37 @@ public class Product {
   }
   public Product() {}
 
-  public double price; // Özellikler-Property
-  public String name;
-  public int stock;
+  private double price;
+  private String name;
+  private int stock;
 
-  // Methods
+  // public methods
+  // getter-setter methods
+  // salt-okunur salt-yazılır
+  // read-only write-only
+  // kontrollü erişim
+  // Kapsülleme - Encapsulation
+  public double getPrice()
+  {
+    return this.price;
+  }
+  public void setPrice(double price)
+  {
+    if(price < 0)
+      price = 0;
+    this.price = price;
+  }
+
   public static void makeDiscount() {
     System.out.println("İndirim yapılıyor..");
   }
 
   // OOP Concepts
-  // Inheritance
   // Encapsulation
+  // Inheritance
   // Polymorphism
-  // Interface-Abstract Class
+  // Interface
+  // Abstract Class
   // -----
   // Package yapısı
   // Dış paketler
