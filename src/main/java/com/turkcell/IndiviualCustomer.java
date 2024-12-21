@@ -11,4 +11,15 @@ public class IndiviualCustomer extends Customer
   public void setIdentityNo(String identityNo) {
     this.identityNo = identityNo;
   }
+
+  // Override
+
+  @Override // annotation
+  public void buy() {
+    // super? => classın extend ettiği classı (Customer)
+    // this => classın kendisi (IndiviualCustomer)
+    //super.buy();
+
+    System.out.println("IndiviualCustomer.buy");
+  }
 }
