@@ -139,6 +139,14 @@ public class Main
     TaxCalculator.CalculateKdv(300);
     TaxCalculator.CalculateKdv(500);
     TaxCalculator.CalculateKdv(700);
+
+    CorporateCustomer corporateCustomer = new CorporateCustomer();
+    corporateCustomer.setCustomerNo("ABC123");
+
+    IndiviualCustomer individualCustomer = new IndiviualCustomer();
+    individualCustomer.setCustomerNo("GHJ456");
+
+    // Inheritance - Kalıtım
   }
 
   public static void sendEmail(String email) {
