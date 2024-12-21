@@ -3,7 +3,7 @@ package com.turkcell;
 import java.util.List;
 
 
-public class PgProductRepository implements ProductRepositoryInterface
+public class PgProductRepository extends ProductRepositoryInterface
 {
 
   @Override

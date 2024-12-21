@@ -3,8 +3,13 @@ package com.turkcell;
 import java.util.List;
 
 // Interface -> Tamamen soyut class
-public interface ProductRepositoryInterface
+public abstract class ProductRepositoryInterface
 {
-  List<Product> getAll(); // Signature-İmza
-  void add(Product product);
+ abstract List<Product> getAll(); // Signature-İmza
+ abstract void add(Product product);
+
+ void addAndLog(Product product) {
+    add(product);
+    System.out.println("Loglama yapıldı");
+ }
 }

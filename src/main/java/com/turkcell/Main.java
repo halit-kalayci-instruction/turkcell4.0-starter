@@ -154,8 +154,8 @@ public class Main
 
 
 
-    ProductRepositoryInterface productRepository = new PgProductRepository();
-    productRepository.add(product1); // 100 farklı noktada 100 kez çağırıldı.
+    ProductRepositoryInterface productRepository = new MssqlProductRepository();
+    productRepository.addAndLog(product1); // 100 farklı noktada 100 kez çağırıldı.
     productRepository.getAll(); //  50
 
   }

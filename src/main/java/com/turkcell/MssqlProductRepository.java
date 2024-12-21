@@ -4,7 +4,7 @@ import java.util.List;
 
 // class -> class (extends)
 // class -> interface (implements)
-public class MssqlProductRepository implements ProductRepositoryInterface
+public class MssqlProductRepository extends ProductRepositoryInterface
 {
 
   @Override
